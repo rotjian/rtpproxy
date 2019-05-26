@@ -130,7 +130,8 @@ init_config(struct cfg *cf, int argc, char **argv)
     struct group *gp;
 
     bh[0] = bh[1] = bh6[0] = bh6[1] = NULL;
-
+	
+    cf->advertised = NULL;
     cf->port_min = PORT_MIN;
     cf->port_max = PORT_MAX;
 
