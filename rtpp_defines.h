@@ -137,6 +137,7 @@ struct cfg {
 
     int log_level;
     int log_facility;
+    char *advertised;
 };
 
 #endif
