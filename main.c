@@ -179,6 +179,7 @@ init_config(struct cfg *cf, int argc, char **argv)
 	    break;
 
 	case 'A':
+	   cf->advertised = strdup(optarg);
 	   cf->advaddr[0] = optarg;
 	   cf->advaddr[1] = strchr(cf->advaddr[0], '/');
 	   if (cf->advaddr[1] != NULL) {
